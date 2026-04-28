@@ -1,0 +1,297 @@
+-- ts file was generated at discord.gg/25ms
+
+local fenv = getfenv()
+
+coroutine.yield(true, 1, game)
+coroutine.yield(true, 2, workspace)
+coroutine.yield(true, 3, script)
+loadstring('    function LPH_NO_VIRTUALIZE(f) return f end;\n')
+
+fenv.LPH_NO_VIRTUALIZE = function(_7)
+    return _7
+end
+
+local _call9 = game:GetService('TweenService')
+local _LocalPlayer14 = game:GetService('Players').LocalPlayer
+local _call18 = Color3.fromRGB(255, 149, 0)
+local _call24 = ColorSequenceKeypoint.new(0, Color3.fromHex('#2e1408'))
+local _call28 = ColorSequenceKeypoint.new(0.5, Color3.fromHex('#ff7518'))
+local _call32 = ColorSequenceKeypoint.new(1, Color3.fromHex('#ffb66a'))
+
+return {
+    _RandomString = function(...)
+        return 'CK=XUUQ\\'
+    end,
+    Colors = {
+        Gradient = {
+            [1] = _call24,
+            [2] = _call28,
+            [3] = _call32,
+        },
+        Error = Color3.fromRGB(255, 60, 60),
+        Highlight = _call18,
+    },
+    Loader = function(...)
+        local _34_vararg1, _34_vararg2, _34_vararg3 = ...
+        local _call36 = Instance.new('ScreenGui')
+
+        _call36.Name = 'CK=IFW^J'
+        _call36.Parent = _LocalPlayer14:WaitForChild('PlayerGui')
+        _call36.Enabled = true
+        _call36.ResetOnSpawn = false
+        _call36.IgnoreGuiInset = true
+        _call36.ZIndexBehavior = Enum.ZIndexBehavior.Global
+
+        local _call40 = Instance.new('Frame')
+        local _call42 = Instance.new('ImageLabel')
+        local _call44 = Instance.new('ImageLabel')
+        local _call46 = Instance.new('TextLabel')
+        local _call48 = Instance.new('Frame')
+        local _call50 = Instance.new('Frame')
+        local _call52 = Instance.new('UIGradient')
+        local _call54 = Instance.new('UICorner')
+        local _call56 = Instance.new('UICorner')
+        local _call58 = Instance.new('TextButton')
+        local _call60 = Instance.new('UICorner')
+
+        _call40.Name = 'CK=FETLI'
+        _call40.Parent = _call36
+        _call40.AnchorPoint = Vector2.new(0.5, 0.5)
+        _call40.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+        _call40.BackgroundTransparency = 1
+        _call40.BorderSizePixel = 0
+        _call40.Position = UDim2.new(0.5, 0, 0.5, 0)
+        _call40.Size = UDim2.new(1, 0, 1, 0)
+        _call44.Name = 'CK=fHSDa'
+        _call44.Parent = _call40
+        _call44.BackgroundTransparency = 1
+        _call44.Size = UDim2.new(1, 0, 1, 0)
+        _call44.Image = 'rbxassetid://18720640102'
+
+        local _call72 = Instance.new('UIGradient')
+        local _call74 = ColorSequence.new({
+            [1] = _call24,
+            [2] = _call28,
+            [3] = _call32,
+        })
+
+        _call72.Color = _call74
+        _call72.Rotation = 0
+        _call72.Parent = _call44
+        _call44.ImageTransparency = 1
+        _call44.AnchorPoint = Vector2.new(0.5, 0.5)
+        _call44.Position = UDim2.fromScale(0.5, 0.5)
+        _call44.ZIndex = 1
+        _call42.Name = 'CK=_cb^a'
+        _call42.Parent = _call40
+        _call42.AnchorPoint = Vector2.new(0.5, 0.5)
+        _call42.BackgroundTransparency = 1
+        _call42.Position = UDim2.new(0.5, 0, 0.45, 0)
+        _call42.Size = UDim2.new(0, 750, 0, 750)
+        _call42.ZIndex = 2
+        _call42.Image = _34_vararg2
+        _call42.ImageTransparency = 1
+        _call46.Name = 'Status'
+        _call46.Parent = _call40
+        _call46.AnchorPoint = Vector2.new(0.5, 1)
+        _call46.Position = UDim2.new(0.5, 0, 0.8, -15)
+        _call46.Size = UDim2.new(0, 400, 0, 30)
+        _call46.BackgroundTransparency = 1
+        _call46.Font = Enum.Font.GothamMedium
+        _call46.Text = 'Initializing...'
+        _call46.TextColor3 = Color3.fromRGB(255, 255, 255)
+        _call46.TextSize = 18
+        _call46.TextTransparency = 1
+        _call46.ZIndex = 3
+        _call48.Name = 'BarContainer'
+        _call48.Parent = _call40
+        _call48.AnchorPoint = Vector2.new(0.5, 0)
+        _call48.Position = UDim2.new(0.5, 0, 0.8, 0)
+        _call48.Size = UDim2.new(0, 300, 0, 6)
+        _call48.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+        _call48.BackgroundTransparency = 1
+        _call48.ZIndex = 3
+        _call56.CornerRadius = UDim.new(1, 0)
+        _call56.Parent = _call48
+        _call50.Name = 'Fill'
+        _call50.Parent = _call48
+        _call50.Size = UDim2.new(0, 0, 1, 0)
+        _call50.BackgroundColor3 = _call18
+        _call50.BorderSizePixel = 0
+        _call50.ZIndex = 4
+        _call54.CornerRadius = UDim.new(1, 0)
+        _call54.Parent = _call50
+        _call52.Parent = _call50
+
+        local _call120 = ColorSequence.new({
+            [1] = ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+            [2] = ColorSequenceKeypoint.new(0.5, _call18),
+            [3] = ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255)),
+        })
+
+        _call52.Color = _call120
+        _call52.Transparency = NumberSequence.new(0)
+        _call58.Name = 'DiscordButton'
+        _call58.Parent = _call40
+        _call58.AnchorPoint = Vector2.new(0.5, 0)
+        _call58.Position = UDim2.new(0.5, 0, 0.8, 25)
+        _call58.Size = UDim2.new(0, 180, 0, 35)
+        _call58.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
+        _call58.BackgroundTransparency = 1
+        _call58.Text = 'Join Discord Server'
+        _call58.Font = Enum.Font.GothamBold
+        _call58.TextColor3 = Color3.fromRGB(255, 255, 255)
+        _call58.TextSize = 14
+        _call58.TextTransparency = 1
+        _call58.ZIndex = 5
+        _call60.CornerRadius = UDim.new(0, 6)
+        _call60.Parent = _call58
+
+        local _call139 = _call58.MouseButton1Click:Connect(function(...)
+            setclipboard(_34_vararg3)
+
+            local _call143 = game:GetService('HttpService')
+            local _callrequest145 = request({
+                Method = 'GET',
+                Url = 'https://ptb.discord.com/api/invites/voidware',
+            })
+            local _call152 = _call143:JSONEncode({
+                cmd = 'INVITE_BROWSER',
+                nonce = _call143:GenerateGUID(false),
+                args = {
+                    code = _call143:JSONDecode(_callrequest145.Body).code,
+                },
+            })
+
+            request({
+                Body = _call152,
+                Url = 'http://127.0.0.1:6463/rpc?v=1',
+                Method = 'POST',
+                Headers = {
+                    Origin = 'https://discord.com',
+                    ['Content-Type'] = 'application/json',
+                },
+            })
+            setclipboard('discord.gg/voidware')
+            game:GetService('StarterGui'):SetCore('SendNotification', {
+                Text = 'Copied to clipboard (discord.gg/voidware)',
+                Title = 'Voidware Discord - discord.gg/voidware',
+                Duration = 10,
+            })
+            print(true, nil)
+
+            _call46.Text = 'Link copied to clipboard!'
+
+            task.wait(2)
+
+            _call46.Text = 'Join Discord Server'
+        end)
+        local _call162 = game:GetService('RunService').RenderStepped:Connect(function(_163)
+            local _ = 0 + (_163 * 0.8)
+
+            error('line 3: attempt to compare number < table')
+        end)
+        local _call171 = _call9:Create(_call40, TweenInfo.new(0.55, Enum.EasingStyle.Quint), {BackgroundTransparency = 0.5})
+
+        _call171:Play()
+        task.delay(0.5, function(...)
+            local _call184 = _call9:Create(_call42, TweenInfo.new(0.75, Enum.EasingStyle.Quint), {
+                Size = UDim2.new(0, 200, 0, 200),
+                ImageTransparency = 0.01,
+            })
+
+            _call184:Play()
+            task.delay(0.25, function(...)
+                local _call193 = _call9:Create(_call44, TweenInfo.new(5), {ImageTransparency = 0.2})
+
+                _call193:Play()
+            end)
+            task.delay(0.5, function(...)
+                local _call202 = _call9:Create(_call46, TweenInfo.new(0.5), {TextTransparency = 0})
+
+                _call202:Play()
+
+                local _call208 = _call9:Create(_call48, TweenInfo.new(0.5), {BackgroundTransparency = 0})
+
+                _call208:Play()
+            end)
+        end)
+
+        local _call212 = Instance.new('BindableEvent')
+
+        return {
+            Destroy = function(...)
+                _call212:Fire('destroyed')
+
+                local _call219 = _call9:Create(_call44, TweenInfo.new(0.5), {ImageTransparency = 1})
+
+                _call219:Play()
+
+                local _call225 = _call9:Create(_call42, TweenInfo.new(0.5), {ImageTransparency = 1})
+
+                _call225:Play()
+
+                local _call231 = _call9:Create(_call46, TweenInfo.new(0.5), {TextTransparency = 1})
+
+                _call231:Play()
+
+                local _call237 = _call9:Create(_call48, TweenInfo.new(0.5), {BackgroundTransparency = 1})
+
+                _call237:Play()
+
+                local _call243 = _call9:Create(_call40, TweenInfo.new(1), {BackgroundTransparency = 1})
+
+                _call243:Play()
+
+                local _call249 = _call9:Create(_call50, TweenInfo.new(0.5), {BackgroundTransparency = 1})
+
+                _call249:Play()
+
+                local _call255 = _call9:Create(_call58, TweenInfo.new(0.5), {
+                    BackgroundTransparency = 1,
+                    TextTransparency = 1,
+                })
+
+                _call255:Play()
+                task.delay(1, function(...)
+                    coroutine.yield(true, 1, _call139)
+                    coroutine.yield(true, 2, _call162)
+                    _call36:Destroy()
+                end)
+            end,
+            Abort = function(...)
+                local _265_vararg1, _265_vararg2 = ...
+
+                _call212:Fire('aborted', _265_vararg2)
+            end,
+            CONSTANTS = {
+                DESTROYED = 'destroyed',
+                ABORTED = 'aborted',
+            },
+            Update = function(...) end,
+            Connect = function(...)
+                local _269_vararg1, _269_vararg2 = ...
+
+                _call212.Event:Connect(_269_vararg2)
+            end,
+        }
+    end,
+    SetGradient = function(...)
+        local _273_vararg1, _273_vararg2, _273_vararg3 = ...
+        local _call275 = Instance.new('UIGradient')
+
+        _call275.Color = ColorSequence.new(_273_vararg3)
+        _call275.Rotation = 0
+        _call275.Parent = _273_vararg2
+
+        return _call275
+    end,
+    _Animation = function(...)
+        local _278_vararg1, _278_vararg2, _278_vararg3, _278_vararg4 = ...
+        local _call280 = _call9:Create(_278_vararg2, _278_vararg3, _278_vararg4)
+
+        _call280:Play()
+
+        return _call280
+    end,
+}

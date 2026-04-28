@@ -1,0 +1,397 @@
+-- ts file was generated at discord.gg/25ms
+
+local genv = getgenv()
+
+game:GetService('Players').LocalPlayer:WaitForChild('PlayerGui'):WaitForChild('ReactUniversalHotbar'):WaitForChild('Frame'):WaitForChild('troops')
+
+local _call14 = game:GetService('ReplicatedStorage')
+local _call16 = game:GetService('Workspace')
+local _call18 = game:GetService('CoreGui')
+local _call20 = game:GetService('Players')
+
+game:GetService('Debris')
+require(_call14.Client.Modules.Replicators.NPCReplicator)
+
+genv.config = {
+    dynamicShotFloor = 1,
+    dynamicMultiplier = true,
+    fastLateralSpread = 1.1,
+    closeCenterBias = 0.88,
+    autoCaliberBoostFullShots = 190,
+    specialTargetMaxShots = 8,
+    leadDistanceThreshold = 28,
+    maxLateralSpread = 1.25,
+    dynamicBudgetMin = 40,
+    autoCaliberBoostMinMultiplier = 1,
+    fastExtraLeadTime = 0.03,
+    projectileSpeedFallback = 360,
+    leadSpeedThreshold = 6,
+    verticalLeadScale = 0.2,
+    baseFireRate = 26,
+    smartTargeting = true,
+    autoCaliberBoostStartShots = 30,
+    pierceLogic = true,
+    autoCaliberStrongBurstCap = 5,
+    predictionDistanceScale = 0.00135,
+    mode = 'First',
+    closeSpreadScale = 0.15,
+    autoCaliberStrongWait = 0.006,
+    fastBurstSize = 2,
+    nearEndReservePerTarget = 8,
+    rangePadding = 3,
+    autoCaliberBoostShotCap = 420,
+    closeForwardScale = 0.35,
+    autoCaliberDpsBoost = true,
+    predictionMaxTime = 0.16,
+    maxFireRate = 170,
+    fastSpeedThreshold = 30,
+    showBulletLines = false,
+    specialTargetLockBypass = true,
+    closeLeadScale = 0.3,
+    chams = true,
+    closeAimCompensation = true,
+    predictionMaxLead = 10.5,
+    fastAim = true,
+    strongModePathWeight = 1.6,
+    disablePrediction = true,
+    unlimitedRange = true,
+    autoCaliberPendingWindow = 0.2,
+    autoCaliberBurstCap = 2,
+    maxShotsPerThreat = 18,
+    strongModeHpWeight = 0.65,
+    specialTargetPriority = true,
+    nearEndForceBonus = 2.5,
+    nearEndProgressThreshold = 0.8,
+    nearEndPriority = true,
+    lockGraceTime = 0.2,
+    velocitySmoothFactor = 0.35,
+    deltaVelocityMax = 220,
+    autofire = true,
+    lockOnTarget = true,
+    aimErrorDecay = 0.92,
+    alwaysLeadMoving = true,
+    autoCaliber = true,
+    dynamicFireRate = true,
+    aimErrorLearnRate = 0.25,
+    useDeltaVelocity = true,
+    aimErrorCompensation = true,
+    dynamicMultiplierCeiling = 5.8,
+    projectileSpeedMin = 120,
+    norecoil = true,
+    aimErrorMax = 3.5,
+    dynamicShotCeiling = 260,
+    dynamicBudgetMax = 180,
+    minFireRate = 14,
+    dynamicMultiplierFloor = 1,
+    autoCaliberBoostMaxMultiplier = 3.8,
+    accelLeadWeight = 0.55,
+    predictionBase = 0.022,
+    burstSize = 4,
+    closeRangeThreshold = 14,
+    useIntercept = true,
+    espMode = 'Chams',
+}
+
+Color3.fromRGB(12, 12, 18)
+Color3.fromRGB(18, 18, 25)
+Color3.fromRGB(90, 140, 255)
+Color3.fromRGB(245, 245, 255)
+Color3.fromRGB(140, 140, 160)
+Color3.fromRGB(45, 45, 65)
+
+local _ = genv.RunningTowers
+
+genv.RunningTowers = {}
+
+_call18:FindFirstChild('TheRailgun_UI')
+_call18.TheRailgun_UI:Destroy()
+_call20.LocalPlayer.PlayerGui:FindFirstChild('TheRailgun_UI')
+_call20.LocalPlayer.PlayerGui.TheRailgun_UI:Destroy()
+_call18:FindFirstChild('TheRailgun_TargetESP')
+_call18.TheRailgun_TargetESP:Destroy()
+_call18:FindFirstChild('KOPI_GATLING_UI')
+_call18.KOPI_GATLING_UI:Destroy()
+_call20.LocalPlayer.PlayerGui:FindFirstChild('KOPI_GATLING_UI')
+_call20.LocalPlayer.PlayerGui.KOPI_GATLING_UI:Destroy()
+_call18:FindFirstChild('KopiTargetESP')
+_call18.KopiTargetESP:Destroy()
+_call18:FindFirstChild('KopiChams')
+_call18.KopiChams:Destroy()
+_call16:FindFirstChild('TheRailgun_BulletLines')
+_call16.TheRailgun_BulletLines:Destroy()
+
+local _ = genv.BulletHitCleaner
+local _ = genv.HitmarkerListener
+
+_call20.LocalPlayer:FindFirstChild('PlayerGui'):FindFirstChild('ReactGameHitmarkerView'):Destroy()
+
+local _call103 = _call20.LocalPlayer:WaitForChild('PlayerGui').ChildAdded:Connect(function(...)
+    local _104_vararg1 = ...
+    local _ = _104_vararg1.Name
+end)
+
+genv.HitmarkerListener = _call103
+
+_call14:WaitForChild('Network', 5):WaitForChild('Damage', 5):FindFirstChild('URE:DisplayDamage'):Destroy()
+
+local _call115 = Instance.new('Folder')
+
+_call115.Name = 'TheRailgun_BulletLines'
+_call115.Parent = _call16
+
+local _119 = loadstring(game:HttpGet('https://raw.nebulasoftworks.xyz/luna', true))()
+local _call121 = _119:CreateWindow({
+    LoadingTitle = 'The Railgun',
+    Subtitle = 'Improved by N',
+    LogoID = '82764282088796',
+    KeySystem = false,
+    LoadingEnabled = true,
+    LoadingSubtitle = 'Booting Luna UI',
+    ConfigSettings = {
+        ConfigFolder = 'TheRailgun',
+    },
+    Name = 'The Railgun',
+})
+local _call123 = _call121:CreateTab({
+    ShowTitle = true,
+    ImageSource = 'Material',
+    Icon = 'view_in_ar',
+    Name = 'Main',
+})
+
+_call123:CreateSection('Combat')
+
+local _ = genv.config
+
+_call123:CreateToggle({
+    CurrentValue = true,
+    Name = 'Auto Fire',
+    Callback = function(...)
+        local _ = genv.config
+    end,
+}, 'autofire')
+
+local _ = genv.config
+
+_call123:CreateToggle({
+    CurrentValue = true,
+    Name = 'Auto Caliber',
+    Callback = function(...)
+        local _ = genv.config
+    end,
+}, 'auto_caliber')
+
+local _ = genv.config
+
+_call123:CreateToggle({
+    CurrentValue = true,
+    Name = 'Smart Targeting',
+    Callback = function(...)
+        local _ = genv.config
+    end,
+}, 'smart_targeting')
+
+local _ = genv.config
+
+_call123:CreateToggle({
+    CurrentValue = true,
+    Name = 'Near End Priority',
+    Callback = function(...)
+        local _ = genv.config
+    end,
+}, 'near_end_priority')
+
+local _ = genv.config
+
+_call123:CreateToggle({
+    CurrentValue = true,
+    Name = 'Pierce Logic',
+    Callback = function(...)
+        local _ = genv.config
+    end,
+}, 'pierce_logic')
+
+local _ = genv.config
+
+_call123:CreateToggle({
+    CurrentValue = false,
+    Name = 'Show Bulllet lines',
+    Callback = function(...)
+        local _ = genv.config
+    end,
+}, 'show_bulllet_lines')
+
+local _ = genv.config
+
+_call123:CreateDropdown({
+    Options = {
+        [1] = 'First',
+        [2] = 'Strongest',
+        [3] = 'Close',
+    },
+    CurrentOption = {
+        [1] = 'First',
+    },
+    MultipleOptions = false,
+    Callback = function(...)
+        local _159_vararg1 = ...
+
+        type(_159_vararg1)
+
+        local _ = _159_vararg1[1]
+    end,
+    Name = 'Target Mode',
+}, 'target_mode')
+
+local _ = genv.config
+
+_call123:CreateDropdown({
+    Options = {
+        [1] = 'Off',
+        [2] = 'Chams',
+        [3] = 'CSGO',
+    },
+    CurrentOption = {
+        [1] = 'Chams',
+    },
+    MultipleOptions = false,
+    Callback = function(...)
+        local _164_vararg1 = ...
+
+        type(_164_vararg1)
+
+        local _ = _164_vararg1[1]
+    end,
+    Name = 'Target ESP',
+}, 'target_esp')
+_119:LoadAutoloadConfig()
+
+local _call169 = Instance.new('Folder', _call18)
+
+_call169.Name = 'TheRailgun_TargetESP'
+genv.StartHooks = function(...)
+    local _170_vararg1 = ...
+    local _ = genv.RunningTowers
+
+    task.spawn(function(...)
+        _call14:WaitForChild('RemoteFunction'):InvokeServer('Troops', 'Abilities', 'Activate', {
+            Troop = _170_vararg1,
+            Name = 'FPS',
+            Data = {enabled = true},
+        })
+    end)
+
+    local _call180 = _170_vararg1:WaitForChild('TowerReplicator', 5)
+
+    _call14:WaitForChild('Network'):WaitForChild('GatlingGun'):WaitForChild('RE:Reload')
+
+    local _call192 = _call14:WaitForChild('Network'):WaitForChild('GatlingGun'):FindFirstChild('RE:BulletHit')
+
+    _call192:IsA('RemoteEvent')
+
+    local _ = genv.BulletHitCleaner
+    local _call198 = _call192.OnClientEvent:Connect(function(...) end)
+
+    genv.BulletHitCleaner = _call198
+
+    require(_call14.Resources.Universal.NewNetwork).Channel('GatlingGun')
+
+    require(_call14.Content.Tower['Gatling Gun'].Animator)._fireGun = function(...) end
+
+    _170_vararg1.AncestryChanged:Connect(function(...) end)
+    task.spawn(function(...)
+        local _ = genv.config
+        local _ = _call180.Parent
+
+        _call180:GetAttribute('Ammo')
+        error('line 3: attempt to compare table <= number')
+    end)
+
+    local _ = genv.RunningTowers
+end
+
+local _call225 = _call16:WaitForChild('Towers')
+
+_call225.ChildAdded:Connect(function(...)
+    local _229_vararg1 = ...
+
+    task.spawn(function(...)
+        local _237 = string.lower(_229_vararg1:WaitForChild('TowerReplicator', 10):GetAttribute('Name'))
+
+        string.find(_237, 'gatling')
+
+        local _ = genv.StartHooks
+        local _ = genv.RunningTowers
+
+        task.spawn(function(...)
+            _call14:WaitForChild('RemoteFunction'):InvokeServer('Troops', 'Abilities', 'Activate', {
+                Troop = _229_vararg1,
+                Name = 'FPS',
+                Data = {enabled = true},
+            })
+        end)
+
+        local _call249 = _229_vararg1:WaitForChild('TowerReplicator', 5)
+
+        _call14:WaitForChild('Network'):WaitForChild('GatlingGun'):WaitForChild('RE:Reload')
+        _call14:WaitForChild('Network'):WaitForChild('GatlingGun'):FindFirstChild('RE:BulletHit'):IsA('RemoteEvent')
+
+        local _ = genv.BulletHitCleaner
+
+        require(_call14.Resources.Universal.NewNetwork).Channel('GatlingGun')
+
+        require(_call14.Content.Tower['Gatling Gun'].Animator)._fireGun = function(...) end
+
+        _229_vararg1.AncestryChanged:Connect(function(...) end)
+        task.spawn(function(...)
+            local _ = genv.config
+            local _ = _call249.Parent
+
+            _call249:GetAttribute('Ammo')
+            error('line 3: attempt to compare table <= number')
+        end)
+
+        local _ = genv.RunningTowers
+    end)
+end)
+
+for _291, _291_2 in pairs(_call225:GetChildren())do
+    task.spawn(function(...)
+        local _299 = string.lower(_291_2:WaitForChild('TowerReplicator', 10):GetAttribute('Name'))
+
+        string.find(_299, 'gatling')
+
+        local _ = genv.StartHooks
+        local _ = genv.RunningTowers
+
+        task.spawn(function(...)
+            _call14:WaitForChild('RemoteFunction'):InvokeServer('Troops', 'Abilities', 'Activate', {
+                Troop = _291_2,
+                Name = 'FPS',
+                Data = {enabled = true},
+            })
+        end)
+
+        local _call311 = _291_2:WaitForChild('TowerReplicator', 5)
+
+        _call14:WaitForChild('Network'):WaitForChild('GatlingGun'):WaitForChild('RE:Reload')
+        _call14:WaitForChild('Network'):WaitForChild('GatlingGun'):FindFirstChild('RE:BulletHit'):IsA('RemoteEvent')
+
+        local _ = genv.BulletHitCleaner
+
+        require(_call14.Resources.Universal.NewNetwork).Channel('GatlingGun')
+
+        require(_call14.Content.Tower['Gatling Gun'].Animator)._fireGun = function(...) end
+
+        _291_2.AncestryChanged:Connect(function(...) end)
+        task.spawn(function(...)
+            local _ = genv.config
+            local _ = _call311.Parent
+
+            _call311:GetAttribute('Ammo')
+            error('line 3: attempt to compare table <= number')
+        end)
+
+        local _ = genv.RunningTowers
+    end)
+end

@@ -1,0 +1,269 @@
+-- ts file was generated at discord.gg/25ms
+
+local fenv = getfenv()
+local _6 = loadstring(game:HttpGet('https://raw.githubusercontent.com/FacilityHUB/Facility-Key-System/refs/heads/main/Interface'))()
+local _screenGui10 = _6.screenGui
+
+_6.ValidateBtn.MouseButton1Click:Connect(function(...)
+    local _Text15 = _6.TextBox.Text
+
+    _6.FacilityLibrary.validateDefaultKey(_Text15)
+    print('Cl\u{e9} valide : ' .. _Text15)
+    game:GetService('StarterGui'):SetCore('SendNotification', {
+        Text = 'Key Valide',
+        Title = 'Facility Key',
+        Icon = 'rbxassetid://1234567890',
+    })
+    print('gougougaga')
+    _screenGui10:Destroy()
+
+    local _30 = loadstring(game:HttpGet('https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua'))()
+    local _34 = loadstring(game:HttpGet('https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua'))()
+    local _38 = loadstring(game:HttpGet('https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua'))()
+    local _call44 = _30:CreateWindow({
+        SubTitle = 'by Individu',
+        Title = 'Facility Farm Only',
+        MinimizeKey = Enum.KeyCode.LeftControl,
+        Theme = 'Dark',
+        Acrylic = false,
+        TabWidth = 107,
+        Size = UDim2.fromOffset(580, 460),
+    })
+    local _call46 = _call44:AddTab({
+        Title = 'Farm',
+        Icon = 'trophy',
+    })
+    local _call48 = _call44:AddTab({
+        Title = 'Misc',
+        Icon = 'globe',
+    })
+    local _call50 = _call44:AddTab({
+        Title = 'Settings',
+        Icon = 'settings',
+    })
+    local _Options51 = _30.Options
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/FacilityHUB/War-Tycoon/refs/heads/main/Positions'))()
+    game:GetService('UserInputService')
+
+    local _ = game:GetService('Workspace').CurrentCamera
+    local _LocalPlayer65 = game:GetService('Players').LocalPlayer
+
+    fenv.UpdateNoclip = function(...)
+        local _ = _LocalPlayer65.Character
+
+        for _71, _71_2 in pairs(_LocalPlayer65.Character:GetDescendants())do
+            coroutine.yield(true, _71, _71_2)
+        end
+    end
+
+    _LocalPlayer65.CharacterAdded:Connect(function(...)
+        local _76_vararg1 = ...
+        local _ = _76_vararg1:WaitForChild('HumanoidRootPart', 1 / 0).CFrame
+
+        spawn(function(...)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            wait(1)
+            error('Luraph Script:410: internal 579: <25ms: infinitelooperror>')
+        end)
+    end)
+    _LocalPlayer65:FindFirstChild('leaderstats')
+    spawn(function(...) end)
+
+    local _call87 = _call46:AddToggle('AutoBuyToggle', {
+        Title = 'AutoBuy',
+        Default = false,
+    })
+    local _call89 = _call46:AddToggle('RecupMonayToggle', {
+        Description = 'Auto-Buy must also be activated',
+        Default = false,
+        Title = 'Auto Farm',
+    })
+
+    _call87:OnChanged(function(...) end)
+    _call89:OnChanged(function(...)
+        local _ = _Options51.RecupMonayToggle.Value
+        local _ = _LocalPlayer65.Character
+
+        for _106, _106_2 in pairs(_LocalPlayer65.Character:GetDescendants())do
+            coroutine.yield(true, _106, _106_2)
+        end
+
+        game:GetService('RunService').Stepped:Connect(function(...)
+            error('Luraph Script:121: Luraph Script:107: internal 579: <25ms: infinitelooperror>')
+        end)
+    end)
+    _Options51.AutoBuyToggle:SetValue(_Options51.AutoBuyToggle.Value)
+    _Options51.RecupMonayToggle:SetValue(_Options51.RecupMonayToggle.Value)
+
+    local _call120 = _call46:AddDropdown('ModeRecupMonayDropdown', {
+        Title = 'Choose what u want to farm',
+        Default = 2,
+        Multi = false,
+        Values = {
+            [1] = 'CashCollector',
+            [2] = 'Crate',
+            [3] = 'Fusion',
+        },
+        Description = 'To do this you need to activate \u{201c}AutoBuy\u{201d}.',
+    })
+
+    _call120:SetValue('Crate')
+    _call120:OnChanged(function(...) end)
+
+    local _call127 = _call46:AddInput('CashTargetInput', {
+        Placeholder = 'Enter cash target...',
+        Title = 'Cash Target',
+        Numeric = true,
+        Finished = true,
+        Callback = function(...) end,
+        Default = '1000000',
+    })
+
+    _call127:OnChanged(function(...) end)
+
+    local _ = game:GetService('Players').LocalPlayer:WaitForChild('PlayerGui'):WaitForChild('MainHUD').HUD.Left.TycoonCompletion.Bar.BarProgressAmount
+    local _call145 = _call46:AddToggle('AutoRebirth', {
+        Title = 'Auto Rebirth',
+        Default = false,
+    })
+
+    _call145:OnChanged(function(...) end)
+    _Options51.AutoRebirth:SetValue(false)
+
+    local _ = fenv.torso
+
+    Vector3.new()
+
+    local _call156 = _call46:AddToggle('Airdrop', {
+        Title = 'Farm | Airdrop',
+        Default = false,
+    })
+
+    _call156:OnChanged(function(...) end)
+    _call156:SetValue(false)
+    _LocalPlayer65.CharacterAdded:Connect(function(...) end)
+
+    local _call167 = _call48:AddToggle('AntiAFK', {
+        Title = 'Anti-AFK | Activated by default',
+        Default = true,
+    })
+
+    _call167:OnChanged(function(...) end)
+    _Options51.AntiAFK:SetValue(true)
+    _call48:AddButton({
+        Callback = function(...) end,
+        Description = "There's no turning back !",
+        Title = 'Boost FPS',
+    })
+
+    local _call178 = _call48:AddToggle('AntiLag', {
+        Title = 'Anti-Lag',
+        Default = false,
+    })
+
+    _call178:OnChanged(function(...) end)
+    _Options51.AntiLag:SetValue(false)
+    _34:SetLibrary(_30)
+    _38:SetLibrary(_30)
+    _34:IgnoreThemeSettings()
+    _34:SetIgnoreIndexes({})
+    _38:SetFolder('Facility Farm')
+    _34:SetFolder('Facility Farm/WarTycoon')
+    _38:BuildInterfaceSection(_call50)
+    _34:BuildConfigSection(_call50)
+    _call44:SelectTab(1)
+    _30:Notify({
+        Duration = 2,
+        Content = 'The script has been loaded.',
+        Title = 'Facility Farm',
+    })
+    _34:LoadAutoloadConfig()
+    makefolder('Facility')
+    writefile('Facility/Key.txt', _Text15)
+end)

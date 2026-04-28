@@ -1,0 +1,928 @@
+-- ts file was generated at discord.gg/25ms
+
+local genv = getgenv()
+
+coroutine.yield(true, 1, game)
+coroutine.yield(true, 2, workspace)
+coroutine.yield(true, 3, script)
+loadstring('<25ms_long_string: 2484bytes> if you need ts message me', 'Luraph', nil)
+
+local _callcloneref11 = cloneref(game:GetService('Players'))
+local _callcloneref14 = cloneref(game:GetService('RunService'))
+
+cloneref(game:GetService('SoundService'))
+
+local _callcloneref20 = cloneref(game:GetService('UserInputService'))
+local _callcloneref23 = cloneref(game:GetService('TextService'))
+local _callcloneref26 = cloneref(game:GetService('Teams'))
+
+cloneref(game:GetService('TweenService'))
+cloneref(game:GetService('Chat'))
+cloneref(game:GetService('MarketplaceService'))
+
+local _LocalPlayer36 = _callcloneref11.LocalPlayer
+local _callcloneref39 = cloneref(_LocalPlayer36:GetMouse())
+local _call43 = crypt.hash('RIFT' .. gethwid(), 'md5')
+local _ = _callcloneref14.IsStudio
+local _RightControl46 = Enum.KeyCode.RightControl
+local _call52 = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+local _call58 = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+Vector2.new(480, 360)
+
+local _call62 = Color3.fromRGB(18, 12, 12)
+local _call64 = Color3.fromRGB(23, 17, 17)
+local _call66 = Color3.fromRGB(220, 85, 30)
+local _call68 = Color3.fromRGB(35, 25, 25)
+local _call70 = Color3.new(0.92, 0.92, 0.92)
+local _call74 = Font.fromEnum(Enum.Font.Code)
+local _call76 = Color3.fromRGB(40, 30, 30)
+local _call78 = Color3.fromRGB(55, 40, 40)
+local _call80 = Color3.fromRGB(255, 50, 50)
+local _call82 = Color3.new(0, 0, 0)
+local _call84 = Color3.new(1, 1, 1)
+local _ = _call43 .. '/ForceCheckboxes.txt'
+local _LayoutOrder87 = Enum.SortOrder.LayoutOrder
+local _ = Enum.ApplyStrokeMode.Border
+local _ = Enum.FillDirection.Vertical
+local _ = Enum.HorizontalAlignment.Center
+local _ = Enum.VerticalAlignment.Center
+
+UDim.new(0, 6)
+UDim2.fromOffset(6, 6)
+UDim2.fromOffset(600, 520)
+UDim2.fromOffset(30, 30)
+
+local _ = Enum.Font.Code
+local _ = Enum.KeyCode.RightControl
+
+UDim2.fromScale(0.5, 0.5)
+Vector2.new(0.5, 0.5)
+UDim2.fromOffset(450, 230)
+UDim2.fromOffset(30, 30)
+
+local _ = Enum.Font.Code
+local _ = Enum.KeyCode.RightControl
+
+Color3.fromRGB(127, 0, 0)
+Color3.fromRGB(255, 50, 50)
+UDim2.fromScale(1, 1)
+
+local _ = Enum.AspectType.ScaleWithParentSize
+
+Color3.new(1, 1, 1)
+
+local _call131 = _callcloneref20:GetPlatform()
+local _ = _call131 == Enum.Platform.Android
+local _ = _call131 == Enum.Platform.IOS
+local _call145 = Instance.new('ScreenGui')
+
+_call145.OnTopOfCoreBlur = true
+
+coroutine.yield(true, 'SafeAreaCompatibility', Enum.SafeAreaCompatibility.None)
+
+_call145.DisplayOrder = 999
+_call145.ResetOnSpawn = false
+
+coroutine.yield(true, 'ScreenInsets', Enum.ScreenInsets.None)
+
+_call145.Parent = cloneref(game:GetService('CoreGui'))
+
+_call145.DescendantRemoving:Connect(function(...) end)
+
+local _call159 = Instance.new('Frame')
+
+_call159.BorderSizePixel = 0
+
+coroutine.yield(true, 'AnchorPoint', Vector2.new(0, 1))
+
+_call159.BackgroundTransparency = 1
+
+coroutine.yield(true, 'Position', UDim2.new(0, 6, 1, -6))
+coroutine.yield(true, 'Parent', _call145)
+
+_call159.Visible = true
+
+coroutine.yield(true, 'Size', UDim2.new(1, 0, 0, 50))
+
+_call159.ZIndex = _call145.ZIndex
+
+local _call174 = Instance.new('UIListLayout')
+
+coroutine.yield(true, 'SortOrder', _LayoutOrder87)
+coroutine.yield(true, 'VerticalAlignment', Enum.VerticalAlignment.Bottom)
+coroutine.yield(true, 'FillDirection', Enum.FillDirection.Horizontal)
+coroutine.yield(true, 'HorizontalAlignment', Enum.HorizontalAlignment.Left)
+coroutine.yield(true, 'Parent', _call159)
+coroutine.yield(true, 'Padding', UDim.new(0, 6))
+
+_call174.ZIndex = _call159.ZIndex
+
+local _call185 = Instance.new('TextButton')
+
+_call185.FontFace = _call74
+_call185.TextColor3 = _call70
+_call185.RichText = true
+_call185.BorderSizePixel = 0
+_call185.AutoButtonColor = false
+_call185.BackgroundTransparency = 1
+_call185.Modal = false
+
+coroutine.yield(true, 'Parent', _call145)
+
+local _ = _call185.RichText
+
+_call185.Text = ''
+_call185.ZIndex = -999
+
+coroutine.yield(true, 'Size', UDim2.fromScale(0, 0))
+
+local _call194 = Instance.new('Frame')
+
+_call194.BorderSizePixel = 0
+_call194.Visible = false
+
+coroutine.yield(true, 'AnchorPoint', Vector2.new(0.5, 0.5))
+coroutine.yield(true, 'Parent', _call145)
+
+_call194.ZIndex = 999
+
+coroutine.yield(true, 'Size', UDim2.fromOffset(9, 1))
+
+_call194.BackgroundColor3 = _call84
+
+local _call205 = Instance.new('Frame')
+
+_call205.BorderSizePixel = 0
+
+coroutine.yield(true, 'AnchorPoint', Vector2.new(0.5, 0.5))
+coroutine.yield(true, 'Position', UDim2.fromScale(0.5, 0.5))
+coroutine.yield(true, 'Parent', _call194)
+
+_call205.ZIndex = 998
+
+coroutine.yield(true, 'Size', UDim2.new(1, 2, 1, 2))
+
+_call205.BackgroundColor3 = _call82
+
+local _call217 = Instance.new('Frame')
+
+_call217.BorderSizePixel = 0
+
+coroutine.yield(true, 'AnchorPoint', Vector2.new(0.5, 0.5))
+coroutine.yield(true, 'Position', UDim2.fromScale(0.5, 0.5))
+coroutine.yield(true, 'Parent', _call194)
+coroutine.yield(true, 'Size', UDim2.fromOffset(1, 9))
+
+_call217.BackgroundColor3 = _call84
+_call217.ZIndex = _call194.ZIndex
+
+local _call230 = Instance.new('Frame')
+
+_call230.BorderSizePixel = 0
+
+coroutine.yield(true, 'AnchorPoint', Vector2.new(0.5, 0.5))
+coroutine.yield(true, 'Position', UDim2.fromScale(0.5, 0.5))
+coroutine.yield(true, 'Parent', _call217)
+
+_call230.ZIndex = 998
+
+coroutine.yield(true, 'Size', UDim2.new(1, 2, 1, 2))
+
+_call230.BackgroundColor3 = _call82
+
+local _call242 = Instance.new('Frame')
+
+_call242.BorderSizePixel = 0
+
+coroutine.yield(true, 'AnchorPoint', Vector2.new(1, 0))
+
+_call242.BackgroundTransparency = 1
+
+coroutine.yield(true, 'Position', UDim2.new(1, -6, 0, 6))
+coroutine.yield(true, 'Parent', _call145)
+coroutine.yield(true, 'Size', UDim2.new(0, 300, 1, -6))
+
+_call242.ZIndex = _call145.ZIndex
+
+local _call253 = Instance.new('UIListLayout')
+
+coroutine.yield(true, 'SortOrder', _LayoutOrder87)
+coroutine.yield(true, 'Parent', _call242)
+coroutine.yield(true, 'Padding', UDim.new(0, 6))
+coroutine.yield(true, 'HorizontalAlignment', Enum.HorizontalAlignment.Right)
+
+_call253.ZIndex = _call242.ZIndex
+
+local _call261 = _callcloneref20.InputBegan:Connect(function(...)
+    local _262_vararg1 = ...
+    local _ = Enum.UserInputType.MouseButton1
+    local _ = Enum.UserInputType.MouseButton2
+    local _ = Enum.UserInputType.Touch
+    local _ = _262_vararg1.UserInputState == Enum.UserInputState.Begin
+end)
+local _call274 = Instance.new('TextLabel')
+
+_call274.RichText = true
+_call274.FontFace = _call74
+_call274.BorderSizePixel = 0
+_call274.TextColor3 = _call70
+_call274.Visible = false
+_call274.TextWrapped = true
+
+coroutine.yield(true, 'Parent', _call145)
+
+_call274.TextSize = 14
+_call274.BorderColor3 = _call68
+_call274.ZIndex = 20
+_call274.BorderSizePixel = 1
+_call274.BackgroundColor3 = _call62
+
+_call274:GetPropertyChangedSignal('AbsolutePosition'):Connect(function(...)
+    local _call292 = Instance.new('GetTextBoundsParams')
+
+    _call292.Text = _call274.Text
+    _call292.RichText = true
+    _call292.Font = _call274.FontFace
+    _call292.Size = _call274.TextSize
+    _call292.Width = ((workspace.CurrentCamera.ViewportSize.X - _call274.AbsolutePosition.X) - 4)
+
+    local _call294 = _callcloneref23:GetTextBoundsAsync(_call292)
+    local _X295 = _call294.X
+    local _Y296 = _call294.Y
+
+    _call274.Size = UDim2.fromOffset((_X295 + 8), (_Y296 + 4))
+
+    coroutine.yield(true, 'Size', UDim2.fromOffset(_X295, _Y296))
+end)
+ColorSequenceKeypoint.new(0, Color3.fromHSV(0, 1, 1))
+ColorSequenceKeypoint.new(0.1, Color3.fromHSV(0.1, 1, 1))
+ColorSequenceKeypoint.new(0.2, Color3.fromHSV(0.2, 1, 1))
+ColorSequenceKeypoint.new(0.30000000000000004, Color3.fromHSV(0.30000000000000004, 1, 1))
+ColorSequenceKeypoint.new(0.4, Color3.fromHSV(0.4, 1, 1))
+ColorSequenceKeypoint.new(0.5, Color3.fromHSV(0.5, 1, 1))
+ColorSequenceKeypoint.new(0.6, Color3.fromHSV(0.6, 1, 1))
+ColorSequenceKeypoint.new(0.7, Color3.fromHSV(0.7, 1, 1))
+ColorSequenceKeypoint.new(0.7999999999999999, Color3.fromHSV(0.7999999999999999, 1, 1))
+ColorSequenceKeypoint.new(0.8999999999999999, Color3.fromHSV(0.8999999999999999, 1, 1))
+ColorSequenceKeypoint.new(0.9999999999999999, Color3.fromHSV(0.9999999999999999, 1, 1))
+
+local _ = _callcloneref20.MouseIconEnabled
+
+_callcloneref14:BindToRenderStep('ShowCursor', Enum.RenderPriority.Last.Value, function(...)
+    _call194.Visible = true
+    _callcloneref20.MouseIconEnabled = false
+
+    local _AbsolutePosition358 = _call194.Parent.AbsolutePosition
+
+    _call194.Position = UDim2.fromOffset((_callcloneref39.X - _AbsolutePosition358.X), (_callcloneref39.Y - _AbsolutePosition358.Y))
+end)
+
+local _call367 = _callcloneref11.PlayerAdded:Connect(function(...)
+    table.sort(_callcloneref11:GetPlayers(), function(...)
+        local _372_vararg1, _372_vararg2 = ...
+        local _Name373 = _372_vararg1.Name
+        local _ = _Name373:lower() < _372_vararg2.Name:lower()
+
+        return true
+    end)
+
+    local _call381 = _callcloneref11:GetPlayers()
+    local _382 = table.find(_call381, _LocalPlayer36)
+
+    table.remove(_call381, _382)
+    table.sort(_call381, function(...)
+        local _385_vararg1, _385_vararg2 = ...
+        local _Name386 = _385_vararg1.Name
+        local _ = _Name386:lower() < _385_vararg2.Name:lower()
+
+        return true
+    end)
+end)
+local _call395 = _callcloneref11.PlayerRemoving:Connect(function(...)
+    table.sort(_callcloneref11:GetPlayers(), function(...)
+        local _400_vararg1, _400_vararg2 = ...
+        local _Name401 = _400_vararg1.Name
+        local _ = _Name401:lower() < _400_vararg2.Name:lower()
+
+        return true
+    end)
+
+    local _call409 = _callcloneref11:GetPlayers()
+    local _410 = table.find(_call409, _LocalPlayer36)
+
+    table.remove(_call409, _410)
+    table.sort(_call409, function(...)
+        local _413_vararg1, _413_vararg2 = ...
+        local _Name414 = _413_vararg1.Name
+        local _ = _Name414:lower() < _413_vararg2.Name:lower()
+
+        return true
+    end)
+end)
+local _call423 = _callcloneref26.ChildAdded:Connect(function(...)
+    table.sort(_callcloneref26:GetTeams(), function(...)
+        local _428_vararg1, _428_vararg2 = ...
+        local _Name429 = _428_vararg1.Name
+        local _ = _Name429:lower() < _428_vararg2.Name:lower()
+
+        return true
+    end)
+end)
+local _call438 = _callcloneref26.ChildRemoved:Connect(function(...)
+    table.sort(_callcloneref26:GetTeams(), function(...)
+        local _443_vararg1, _443_vararg2 = ...
+        local _Name444 = _443_vararg1.Name
+        local _ = _Name444:lower() < _443_vararg2.Name:lower()
+
+        return true
+    end)
+end)
+
+genv.RiftLibrary = {
+    ReportError = function(...)
+        local _451_vararg1, _451_vararg2 = ...
+        local _ = _451_vararg1.NotifyOnError
+
+        _451_vararg1:Notify({
+            Description = _451_vararg2 .. '\n\nIf this persists, please contact us by our Discord server and make a bug report which includes the game name, the feature and the executor.',
+            Icon = 'circle-x',
+            Title = 'Error',
+        })
+    end,
+    SetAssetsFolder = function(...) end,
+    CantDragForced = false,
+    SafeCallback = function(...)
+        local _457_vararg1, _457_vararg2 = ...
+
+        type(_457_vararg2)
+    end,
+    RemoveFromRegistry = function(...) end,
+    UpdateKeybindFrame = function(...) end,
+    NotifyTweenInfo = _call58,
+    AssetIds = {
+        ['Tiles.png'] = 'rbxassetid://139785960036434',
+        ['Gradient.png'] = 'rbxassetid://4155801252',
+        ['Glow.png'] = 'rbxassetid://8774493213',
+    },
+    SetFont = function(...)
+        local _460_vararg1, _460_vararg2 = ...
+
+        type(_460_vararg2)
+        coroutine.yield(true, _call194, {
+            BackgroundColor3 = 'White',
+        })
+        coroutine.yield(true, _call230, {
+            BackgroundColor3 = 'Dark',
+        })
+        coroutine.yield(true, _call185, {
+            TextColor3 = 'FontColor',
+            FontFace = 'Font',
+        })
+        coroutine.yield(true, _call274, {
+            FontFace = 'Font',
+            TextColor3 = 'FontColor',
+            BorderColor3 = 'OutlineColor',
+            BorderSizePixel = 'BorderSizePixel',
+            BackgroundColor3 = 'BackgroundColor',
+        })
+        coroutine.yield(true, _call217, {
+            BackgroundColor3 = 'White',
+        })
+        coroutine.yield(true, _call205, {
+            BackgroundColor3 = 'Dark',
+        })
+    end,
+    GetKeyString = function(...)
+        local _467_vararg1, _467_vararg2 = ...
+        local _ = _467_vararg2.EnumType == Enum.KeyCode
+
+        return _467_vararg2.Name
+    end,
+    AssetsFolder = _call43,
+    Unload = function(...)
+        _call438:Disconnect()
+        _call423:Disconnect()
+        _call395:Disconnect()
+        _call367:Disconnect()
+        _call261:Disconnect()
+        _call145:Destroy()
+    end,
+    Signals = {},
+    GetAsset = function(...)
+        local _485_vararg1, _485_vararg2 = ...
+        local _ = _485_vararg1.IsStudio
+
+        return _485_vararg1.AssetIds[_485_vararg2]
+    end,
+    LoadIconManager = function(...)
+        local _493 = loadstring(game:HttpGet('https://rifton.top/Libraries/addons/IconManager.lua'))()
+
+        writefile(_call43 .. '/IconSprite.png', game:HttpGet('https://rifton.top/Rift/Assets/IconSprite.png'))
+        _493:SetIconSpriteSheet(getcustomasset(_call43 .. '/IconSprite.png'))
+        _493:GetAsset('check')
+        _493:GetAsset('chevron-up')
+        _493:GetAsset('move-diagonal-2')
+        _493:GetAsset('key')
+    end,
+    SetDPIScale = function(...)
+        local _509_vararg1, _509_vararg2 = ...
+        local _510 = (_509_vararg2 / 100)
+        local _ = Vector2.new(480, 360) * _510
+
+        coroutine.yield(true, _call274, {
+            DPIOffset = {
+                Size = {
+                    [1] = 8,
+                    [2] = 4,
+                },
+            },
+            DPIExclude = {},
+            TextSize = 14,
+        })
+    end,
+    AddDraggableMenu = function(...)
+        local _513_vararg1, _513_vararg2 = ...
+        local _call521 = Instance.new('Frame')
+
+        _call521.BorderSizePixel = 0
+
+        coroutine.yield(true, 'Size', UDim2.new(1, 4, 1, 4))
+
+        _call521.BackgroundTransparency = 0
+
+        coroutine.yield(true, 'Position', UDim2.fromOffset(-2, -2))
+        coroutine.yield(true, 'Parent', _call145)
+
+        _call521.ZIndex = 10
+
+        coroutine.yield(true, 'AutomaticSize', Enum.AutomaticSize.None)
+
+        _call521.BackgroundColor3 = _call82
+
+        local _call529 = Instance.new('Frame')
+
+        _call529.BorderSizePixel = 0
+        _call529.BackgroundTransparency = 0
+
+        coroutine.yield(true, 'Parent', _call521)
+
+        _call529.ZIndex = 10
+
+        coroutine.yield(true, 'Size', UDim2.new(1, 0, 1, 0))
+
+        _call529.BackgroundColor3 = _call68
+
+        local _call541 = Instance.new('UIPadding')
+
+        coroutine.yield(true, 'PaddingTop', UDim.new(0, 1))
+        coroutine.yield(true, 'Parent', _call521)
+        coroutine.yield(true, 'PaddingLeft', UDim.new(0, 1))
+        coroutine.yield(true, 'PaddingRight', UDim.new(0, 1))
+        coroutine.yield(true, 'PaddingBottom', UDim.new(0, 1))
+
+        _call541.ZIndex = _call521.ZIndex
+
+        local _call557 = Instance.new('UIPadding')
+
+        coroutine.yield(true, 'PaddingTop', UDim.new(0, 1))
+        coroutine.yield(true, 'Parent', _call529)
+        coroutine.yield(true, 'PaddingLeft', UDim.new(0, 1))
+        coroutine.yield(true, 'PaddingRight', UDim.new(0, 1))
+        coroutine.yield(true, 'PaddingBottom', UDim.new(0, 1))
+
+        _call557.ZIndex = _call529.ZIndex
+
+        local _call567 = Instance.new('UICorner')
+
+        coroutine.yield(true, 'Parent', _call521)
+        coroutine.yield(true, 'CornerRadius', UDim.new(0, 5))
+
+        _call567.ZIndex = _call521.ZIndex
+
+        local _call574 = Instance.new('UICorner')
+
+        coroutine.yield(true, 'Parent', _call529)
+        coroutine.yield(true, 'CornerRadius', UDim.new(0, 4))
+
+        _call574.ZIndex = _call529.ZIndex
+        _call521.AutomaticSize = Enum.AutomaticSize.Y
+        _call521.Position = UDim2.fromOffset(6, 6)
+        _call521.Size = UDim2.fromOffset(0, 0)
+
+        local _call589 = Instance.new('Frame')
+
+        _call589.BorderSizePixel = 0
+
+        coroutine.yield(true, 'Parent', _call521)
+        coroutine.yield(true, 'Size', UDim2.new(1, -2, 1, -2))
+        coroutine.yield(true, 'Position', UDim2.fromOffset(1, 1))
+
+        _call589.BackgroundColor3 = _call62
+        _call589.ZIndex = _call521.ZIndex
+
+        local _call597 = Instance.new('UICorner')
+
+        coroutine.yield(true, 'Parent', _call589)
+        coroutine.yield(true, 'CornerRadius', UDim.new(0, 3))
+
+        _call597.ZIndex = _call589.ZIndex
+
+        local _call607 = Instance.new('Frame')
+
+        _call607.BorderSizePixel = 0
+
+        coroutine.yield(true, 'AnchorPoint', Vector2.zero)
+
+        _call607.BackgroundTransparency = 0
+
+        coroutine.yield(true, 'Position', UDim2.fromOffset(0, 34))
+        coroutine.yield(true, 'Parent', _call589)
+        coroutine.yield(true, 'Size', UDim2.new(1, 0, 0, 1))
+
+        _call607.BackgroundColor3 = _call68
+        _call607.ZIndex = _call589.ZIndex
+
+        local _call618 = Instance.new('TextLabel')
+
+        _call618.RichText = true
+        _call618.FontFace = _460_vararg2
+        _call618.BorderSizePixel = 0
+        _call618.TextColor3 = _call70
+        _call618.BackgroundTransparency = 1
+
+        coroutine.yield(true, 'TextXAlignment', Enum.TextXAlignment.Left)
+        coroutine.yield(true, 'Parent', _call589)
+        coroutine.yield(true, 'Text', _513_vararg2)
+
+        _call618.TextSize = (15 * _510)
+
+        coroutine.yield(true, 'Size', UDim2.new(1, 0, 0, 34))
+
+        _call618.ZIndex = _call589.ZIndex
+
+        local _call630 = Instance.new('UIPadding')
+
+        coroutine.yield(true, 'Parent', _call618)
+        coroutine.yield(true, 'PaddingRight', UDim.new(0, 12))
+        coroutine.yield(true, 'PaddingLeft', UDim.new(0, 12))
+
+        _call630.ZIndex = _call618.ZIndex
+
+        local _call640 = Instance.new('Frame')
+
+        _call640.BorderSizePixel = 0
+
+        coroutine.yield(true, 'Parent', _call589)
+        coroutine.yield(true, 'Size', UDim2.new(1, 0, 1, -35))
+
+        _call640.BackgroundTransparency = 1
+
+        coroutine.yield(true, 'Position', UDim2.fromOffset(0, 35))
+
+        _call640.ZIndex = _call589.ZIndex
+
+        local _call648 = Instance.new('UIListLayout')
+
+        coroutine.yield(true, 'SortOrder', _LayoutOrder87)
+        coroutine.yield(true, 'Parent', _call640)
+        coroutine.yield(true, 'Padding', UDim.new(0, 7))
+
+        _call648.ZIndex = _call640.ZIndex
+
+        Instance.new('UIPadding')
+        coroutine.yield(true, 'PaddingTop', UDim.new(0, 7))
+        coroutine.yield(true, 'PaddingBottom', UDim.new(0, 7))
+        coroutine.yield(true, 'Parent', _call640)
+        coroutine.yield(true, 'PaddingRight', UDim.new(0, 7))
+        coroutine.yield(true, 'PaddingLeft', UDim.new(0, 7))
+        _call618.InputBegan:Connect(function(...)
+            local _ = Enum.UserInputType.MouseButton1
+
+            error('internal 557: <25ms: infinitelooperror>')
+        end)
+        _callcloneref20.InputChanged:Connect(function(...) end)
+
+        return _call521, _call640
+    end,
+    DownloadAsset = function(...) end,
+    Toggle = function(...) end,
+    GetBetterColor = function(...) end,
+    Registry = {
+        [_call185] = {
+            TextColor3 = 'FontColor',
+            FontFace = 'Font',
+        },
+        [_call607] = {
+            BackgroundTransparency = function(...) end,
+            BackgroundColor3 = 'OutlineColor',
+        },
+        [_call618] = {
+            TextColor3 = 'FontColor',
+            FontFace = 'Font',
+        },
+        [_call205] = {
+            BackgroundColor3 = 'Dark',
+        },
+        [_call194] = {
+            BackgroundColor3 = 'White',
+        },
+        [_call529] = {
+            BackgroundTransparency = 'AfterImageTransparency',
+            BackgroundColor3 = 'OutlineColor',
+        },
+        [_call589] = {
+            BackgroundColor3 = 'BackgroundColor',
+        },
+        [_call274] = {
+            FontFace = 'Font',
+            TextColor3 = 'FontColor',
+            BorderColor3 = 'OutlineColor',
+            BorderSizePixel = 'BorderSizePixel',
+            BackgroundColor3 = 'BackgroundColor',
+        },
+        [_call230] = {
+            BackgroundColor3 = 'Dark',
+        },
+        [_call521] = {
+            BackgroundTransparency = 'AfterImageTransparency',
+            BackgroundColor3 = 'Dark',
+        },
+        [_call217] = {
+            BackgroundColor3 = 'White',
+        },
+    },
+    Options = {},
+    SetWatermarksVisible = function(...) end,
+    SetAssetsUrl = function(...) end,
+    MakeResizable = function(...) end,
+    SetNotifySide = function(...) end,
+    Notifications = {},
+    SaveAsset = function(...) end,
+    DPIRegistry = {
+        [_call274] = {
+            DPIOffset = {
+                Size = {
+                    [1] = 8,
+                    [2] = 4,
+                },
+            },
+            DPIExclude = {},
+            TextSize = 14,
+        },
+        [_call618] = {
+            DPIOffset = {},
+            DPIExclude = {},
+            TextSize = 15,
+        },
+    },
+    CreateWindow = function(...) end,
+    CreateChangableWindow = function(...) end,
+    Notify = function(...) end,
+    LocalPlayer = _LocalPlayer36,
+    Watermark = function(...) end,
+    DownloadFile = function(...) end,
+    OnUnload = function(...) end,
+    AddTooltip = function(...) end,
+    TweenInfo = _call52,
+    ForceCheckbox = false,
+    DevicePlatform = _call131,
+    CornerRadius = 4,
+    MakeCover = function(...) end,
+    GetTextBounds = function(...) end,
+    MakeOutline = function(...) end,
+    Buttons = {},
+    UnloadSignals = {},
+    AddToRegistry = function(...) end,
+    MakeLine = function(...) end,
+    AssetsUrl = 'https://rifton.top/Rift/Assets',
+    MouseIsOverFrame = function(...) end,
+    NotifyOnError = true,
+    Tabs = {},
+    ToggleKeybind = _RightControl46,
+    AddDraggableButton = function(...) end,
+    GetDarkerColor = function(...) end,
+    GetIcon = function(...) end,
+    Labels = {},
+    CheckAssetsFolder = function(...) end,
+    WatermarksFrame = _call159,
+    MakeDraggable = function(...) end,
+    Errors = {},
+    NotifySide = 'Right',
+    UpdateColorsUsingRegistry = function(...) end,
+    Diddy = function(...) end,
+    CreateWatermarkContainer = function(...) end,
+    LoadModules = function(...) end,
+    IsLightTheme = false,
+    GetModule = function(...) end,
+    IsStudio = false,
+    MinSize = _511,
+    GiveSignal = function(...) end,
+    Unloaded = true,
+    ModulesUrl = 'https://rifton.top/Libraries/addons',
+    Toggled = false,
+    Toggles = {},
+    UpdateDPI = function(...) end,
+    LoadCustomAsset = function(...) end,
+    KeybindToggles = {},
+    SetModulesUrl = function(...) end,
+    Validate = function(...) end,
+    ShowToggleFrameInKeybinds = true,
+    GetUserThumbnailAsync = function(...) end,
+    IsMobile = false,
+    ScreenGui = _call145,
+    AddContextMenu = function(...) end,
+    Scheme = {
+        MainColor = _call64,
+        TertiaryColor = _call78,
+        FontColor = _call70,
+        White = _call84,
+        SecondaryColor = _call76,
+        Dark = _call82,
+        BackgroundImage = '',
+        AfterImageTransparency = 0,
+        BorderSizePixel = 1,
+        Font = _460_vararg2,
+        AccentColor = _call66,
+        WindowGlow = true,
+        OutlineColor = _call68,
+        BackgroundImageEnabled = false,
+        BackgroundColor = _call62,
+        Red = _call80,
+    },
+    DPIScale = _510,
+    GetAssetContent = function(...) end,
+    ShowCustomCursor = true,
+}
+
+return {
+    ReportError = function(...) end,
+    SetAssetsFolder = function(...) end,
+    CantDragForced = false,
+    SafeCallback = function(...) end,
+    RemoveFromRegistry = function(...) end,
+    UpdateKeybindFrame = function(...) end,
+    NotifyTweenInfo = _call58,
+    AssetIds = {
+        ['Tiles.png'] = 'rbxassetid://139785960036434',
+        ['Gradient.png'] = 'rbxassetid://4155801252',
+        ['Glow.png'] = 'rbxassetid://8774493213',
+    },
+    SetFont = function(...) end,
+    GetKeyString = function(...) end,
+    AssetsFolder = _call43,
+    Unload = function(...) end,
+    Signals = {[1] = _call678},
+    GetAsset = function(...) end,
+    LoadIconManager = function(...) end,
+    SetDPIScale = function(...) end,
+    AddDraggableMenu = function(...) end,
+    DownloadAsset = function(...) end,
+    Toggle = function(...) end,
+    GetBetterColor = function(...) end,
+    Registry = {
+        [_call185] = {
+            TextColor3 = 'FontColor',
+            FontFace = 'Font',
+        },
+        [_call607] = {
+            BackgroundTransparency = function(...) end,
+            BackgroundColor3 = 'OutlineColor',
+        },
+        [_call618] = {
+            TextColor3 = 'FontColor',
+            FontFace = 'Font',
+        },
+        [_call205] = {
+            BackgroundColor3 = 'Dark',
+        },
+        [_call194] = {
+            BackgroundColor3 = 'White',
+        },
+        [_call529] = {
+            BackgroundTransparency = 'AfterImageTransparency',
+            BackgroundColor3 = 'OutlineColor',
+        },
+        [_call589] = {
+            BackgroundColor3 = 'BackgroundColor',
+        },
+        [_call274] = {
+            FontFace = 'Font',
+            TextColor3 = 'FontColor',
+            BorderColor3 = 'OutlineColor',
+            BorderSizePixel = 'BorderSizePixel',
+            BackgroundColor3 = 'BackgroundColor',
+        },
+        [_call230] = {
+            BackgroundColor3 = 'Dark',
+        },
+        [_call521] = {
+            BackgroundTransparency = 'AfterImageTransparency',
+            BackgroundColor3 = 'Dark',
+        },
+        [_call217] = {
+            BackgroundColor3 = 'White',
+        },
+    },
+    Options = {},
+    SetWatermarksVisible = function(...) end,
+    SetAssetsUrl = function(...) end,
+    MakeResizable = function(...) end,
+    SetNotifySide = function(...) end,
+    Notifications = {},
+    SaveAsset = function(...) end,
+    DPIRegistry = {
+        [_call274] = {
+            DPIOffset = {
+                Size = {
+                    [1] = 8,
+                    [2] = 4,
+                },
+            },
+            DPIExclude = {},
+            TextSize = 14,
+        },
+        [_call618] = {
+            DPIOffset = {},
+            DPIExclude = {},
+            TextSize = 15,
+        },
+    },
+    CreateWindow = function(...) end,
+    CreateChangableWindow = function(...) end,
+    Notify = function(...) end,
+    LocalPlayer = _LocalPlayer36,
+    Watermark = function(...) end,
+    DownloadFile = function(...) end,
+    OnUnload = function(...) end,
+    AddTooltip = function(...) end,
+    TweenInfo = _call52,
+    ForceCheckbox = false,
+    DevicePlatform = _call131,
+    CornerRadius = 4,
+    MakeCover = function(...) end,
+    GetTextBounds = function(...) end,
+    MakeOutline = function(...) end,
+    Buttons = {},
+    UnloadSignals = {},
+    AddToRegistry = function(...) end,
+    MakeLine = function(...) end,
+    AssetsUrl = 'https://rifton.top/Rift/Assets',
+    MouseIsOverFrame = function(...) end,
+    NotifyOnError = true,
+    Tabs = {},
+    ToggleKeybind = _RightControl46,
+    AddDraggableButton = function(...) end,
+    GetDarkerColor = function(...) end,
+    GetIcon = function(...) end,
+    Labels = {},
+    CheckAssetsFolder = function(...) end,
+    WatermarksFrame = _call159,
+    MakeDraggable = function(...) end,
+    Errors = {},
+    NotifySide = 'Right',
+    UpdateColorsUsingRegistry = function(...) end,
+    Diddy = function(...) end,
+    CreateWatermarkContainer = function(...) end,
+    LoadModules = function(...) end,
+    IsLightTheme = false,
+    GetModule = function(...) end,
+    IsStudio = false,
+    MinSize = _511,
+    GiveSignal = function(...) end,
+    Unloaded = true,
+    ModulesUrl = 'https://rifton.top/Libraries/addons',
+    Toggled = false,
+    Toggles = {},
+    UpdateDPI = function(...) end,
+    LoadCustomAsset = function(...) end,
+    KeybindToggles = {},
+    SetModulesUrl = function(...) end,
+    Validate = function(...) end,
+    ShowToggleFrameInKeybinds = true,
+    GetUserThumbnailAsync = function(...) end,
+    IsMobile = false,
+    ScreenGui = _call145,
+    AddContextMenu = function(...) end,
+    Scheme = {
+        MainColor = _call64,
+        TertiaryColor = _call78,
+        FontColor = _call70,
+        White = _call84,
+        SecondaryColor = _call76,
+        Dark = _call82,
+        BackgroundImage = '',
+        AfterImageTransparency = 0,
+        BorderSizePixel = 1,
+        Font = _460_vararg2,
+        AccentColor = _call66,
+        WindowGlow = true,
+        OutlineColor = _call68,
+        BackgroundImageEnabled = false,
+        BackgroundColor = _call62,
+        Red = _call80,
+    },
+    DPIScale = _510,
+    GetAssetContent = function(...) end,
+    ShowCustomCursor = true,
+}
